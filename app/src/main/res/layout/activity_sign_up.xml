@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsapp_image_2024_08_29_at_11_13_57_0b26d1e9"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/signupcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="664dp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:fontFamily="sans-serif"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signupcontainer" />
+
+    <EditText
+        android:id="@+id/entername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter name"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+    <TextView
+        android:id="@+id/signemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:fontFamily="sans-serif"
+        android:text="Email"
+        android:textFontWeight="700"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/entername" />
+
+
+    <EditText
+        android:id="@+id/signentermail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter email"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/signemail" />
+    <TextView
+        android:id="@+id/signpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/signentermail"
+        android:text="Password"
+        android:layout_margin="40dp"
+        android:textFontWeight="700"
+        android:textSize="32dp"
+        android:fontFamily="sans-serif"/>
+    <EditText
+        android:id="@+id/signenterpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter password"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/signpassword"/>
+    <ImageView
+        android:id="@+id/signgoogle"
+        android:layout_width="53dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signbtn" />
+
+    <ImageView
+        android:id="@+id/signfb"
+        android:layout_width="53dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signbtn" />
+    <Button
+        android:id="@+id/signbtn"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_margin="40dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#B27E63"
+        android:text="Sign Up"
+        android:textSize="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/signenterpass"
+        tools:layout_editor_absoluteX="40dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
