@@ -1,0 +1,106 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D3D0D0">
+
+    <!-- Top AppBar Layout (Logo and Search) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <!-- App Logo -->
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Farm Connect Logo"
+            android:src="@drawable/ic_logo" />
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/search_background"
+            android:paddingHorizontal="8dp"
+            android:layout_marginStart="16dp">
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Search"
+                android:background="@null"
+                android:padding="8dp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search"
+                android:contentDescription="Search Icon"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Horizontal ScrollView for Categories (Vegetables, Fruits, Crops) -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:background="@color/white"
+        android:paddingVertical="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Category 1 (Vegetables) -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/round_background"
+                    android:contentDescription="Vegetables"
+                    android:src="@drawable/ic_vegetables" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetables"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <!-- Category 2 (Fruits) -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/round_background"
+                    android:contentDescription="Fruits"
+                    android:src="@drawable/ic_fruits" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+

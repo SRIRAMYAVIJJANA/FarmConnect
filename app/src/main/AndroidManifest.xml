@@ -24,6 +24,9 @@
             android:name=".AddPostActivity"
             android:exported="false" />
         <activity
+            android:name=".ColdStorage"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
